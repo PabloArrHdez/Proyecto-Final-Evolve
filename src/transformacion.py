@@ -366,7 +366,7 @@ def añadir_columna(df_video_games_unido):
     df_video_games_unido['Tipo_Saga'] = df_video_games_unido['Es_Saga'].apply(lambda x: 'Saga' if x == 1 else 'No saga')
     return df_video_games_unido
 
-def eliminar_columnas(df_video_games_unido):
+def añadir_columnas(df_video_games_unido):
     recesion = {
     1980, 1981, 1982, 1983, 1991, 1992, 2001,
     2008, 2009, 2020
