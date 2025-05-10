@@ -23,3 +23,4 @@ df_filtrado = df[
     (df["Price"].between(price_range[0], price_range[1]))
 ]
 st.write (f"Se econtró {df_filtrado.shape[0]} videojuegos")
+st.dataframe(df_filtrado)
