@@ -17,32 +17,4 @@ modo_juego = st.selectbox('Modo de juego', ['Multijugador', 'Individual'])
 pegi = st.selectbox('Clasificación PEGI', [3, 7, 12, 16, 18])
 duracion_cat = st.selectbox('Duración estimada', ['Corta', 'Media', 'Larga'])
 
-# Botón para predecir
-if st.button('Predecir Ventas'):
-    # Crear dataframe con los valores ingresados
-    input_data = pd.DataFrame({
-        'Platform': [platform],
-        'Genre': [genre],
-        'Price': [price],
-        'Modo Juego': [modo_juego],
-        'PEGI_Categoria': [pegi],
-        'Duracion_ juego_cat': [duracion_cat],
-        
-        # Rellenar automáticamente el resto de variables
-        'Year': [2024],
-        'Publisher': ['Electronic Arts'],  # valor típico o uno frecuente
-        'User_Score': [7.5],
-        'User Ratings Count': [300],
-        'Estado_Consola': ['Actual'],
-        'Price_Platform': [299.99],
-        'Year_Consola': [2017],
-        'Años_desde_lanzamiento_consola': [2024 - 2017],
-        'Precio_relativo': [price / 299.99],
-        'Nombre_Base': ['BaseName'],
-        'Tipo_Saga': ['No Saga'],
-        'Situacion_Economica': ['Crecimiento']
-    })
 
-    # Predecir
-    prediccion = modelo.predict(input_data)[0]
-    st.success(f'Predicción estimada: **{prediccion}**')
