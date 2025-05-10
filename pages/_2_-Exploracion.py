@@ -21,7 +21,7 @@ df_filtrado = df[
     (df["PEGI_categoria"].isin(pegi_categoria)) &
     (df["Duracion_juego_cat"].isin(duracion_juego)) &
     (df["Price"].between(price_range[0], price_range[1]))
-    ]
+]
 
 st.write (f"Se econtró {df_filtrado.shape[0]} videojuegos")
 st.dataframe(df_filtrado)
