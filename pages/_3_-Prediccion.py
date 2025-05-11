@@ -14,9 +14,14 @@ plataformas_activas = [
     'PlayStation 4', 'Xbox One', 'PC'
 ]
 plataforma_secundaria = ['Nintendo 3DS', 'PlayStation Vita']
-
+plataforma_obsoleta = ['Nintendo Wii', 'Nintendo Entertainment System', 'Game Boy', 'Nintendo DS', 'Xbox 360', 'PlayStation 3', 'PlayStation 2', 'Super Nintendo Entertainment System', 'Game Boy Advance', 'Nintendo 64', 'PlayStation', 'Xbox', 'Atari 2600', 'PlayStation Portable', 'GameCube', 'Nintendo Wii U', 'Sega Genesis', 'Dream Cast', 'Sega Saturn']
 estado_consola = st.selectbox('Antigüedad Consola', ['Obsoleta', ' Consola Secundaria', ' Consola Activa'])
-platform = st.selectbox('Plataforma', ['Nintendo Wii', 'Nintendo Entertainment System', 'Game Boy', 'Nintendo DS', 'Xbox 360', 'PlayStation 3', 'PlayStation 2', 'Super Nintendo Entertainment System', 'Game Boy Advance', 'Nintendo 3DS', 'PlayStation 4', 'Nintendo 64', 'PlayStation', 'Xbox', 'PC', 'Atari 2600', 'PlayStation Portable', 'Xbox One', 'GameCube', 'Nintendo Wii U', 'Sega Genesis', 'Dream Cast', 'PlayStation Vita', 'Sega Saturn'])  # Ajusta tus valores reales
+if estado_consola == 'Consola Activa':
+    platform = st.selectbox('Plataforma', plataformas_activas)
+elif estado_consola == 'Consola Secundaria':
+    platform = st.selectbox('Plataforma', plataforma_secundaria)
+else:
+    platform = st.selectbox('Plataforma', plataforma_obsoleta)
 genre = st.selectbox('Género', ['Sports', 'Platform', 'Racing', 'Role-Playing', 'Puzzle', 'Misc', 'Shooter', 'Simulation', 'Action', 'Fighting', 'Adventure', 'Strategy'])      # Ajusta también
 price = st.number_input('Precio del videojuego (€)', min_value=29.99, max_value=69.99, value=29.99)
 modo_juego = st.selectbox('Modo de juego', ['Multijugador', 'Individual'])
