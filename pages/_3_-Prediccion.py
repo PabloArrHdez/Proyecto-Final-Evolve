@@ -48,8 +48,8 @@ if st.button('Predecir Ventas'):
         'Genre': [genre],
         'Price': [price],
         'Modo Juego': [modo_juego],
-        'PEGI_Categoria': [pegi],
-        'Duracion_ juego_cat': [duracion_cat],
+        'PEGI_categoria': [pegi],
+        'Duracion_juego_cat': [duracion_cat],
         'Year': [year],
         'Publisher': [publisher],  # valor típico o uno frecuente
         'User Score': [nota_usuario],
