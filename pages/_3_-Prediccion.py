@@ -52,16 +52,16 @@ if st.button('Predecir Ventas'):
         'Duracion_ juego_cat': [duracion_cat],
         'Year': [year],
         'Publisher': [publisher],  # valor típico o uno frecuente
-        'User_Score': [nota_usuario],
+        'User Score': [nota_usuario],
         'User Ratings Count': [n_votaciones],
-        'Estado Consola': [estado_consola],
+        'Estado_Consola': [estado_consola],
         'Price_Platform': [price_platform],
         'Year_Consola': [year_consola],
         'Tipo_Saga': [saga],
         'Situacion_Economica': [economia],
         'Nombre_Base': ['JuegoGenérico'],
         'Precio_relativo': [price / price_platform],
-        'Año desde lanzamiento consola': [year - year_consola]
+        'Años_desde_lanzamiento_consola': [year - year_consola]
     })
 
     prediccion = modelo.predict(input_data)[0]
