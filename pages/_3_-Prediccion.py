@@ -46,18 +46,18 @@ if st.button('Predecir Ventas'):
         'Modo Juego': [modo_juego],
         'PEGI_Categoria': [pegi],
         'Duracion_ juego_cat': [duracion_cat],
-        'Year': [2024],
+        'Year': [year],
         'Publisher': ['Electronic Arts'],  # valor típico o uno frecuente
-        'User_Score': [7.5],
-        'User Ratings Count': [300],
+        'User_Score': [nota_usuario],
+        'User Ratings Count': [n_votaciones],
         'Estado_Consola': ['Actual'],
         'Price_Platform': [299.99],
-        'Year_Consola': [2017],
+        'Year_Consola': [year_consola],
         'Años_desde_lanzamiento_consola': [2024 - 2017],
         'Precio_relativo': [price / 299.99],
         'Nombre_Base': ['BaseName'],
-        'Tipo_Saga': ['No Saga'],
-        'Situacion_Economica': ['Crecimiento']
+        'Tipo_Saga': [saga],
+        'Situacion_Economica': [economia]
     })
 
 
