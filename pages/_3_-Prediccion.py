@@ -50,7 +50,7 @@ if st.button('Predecir Ventas'):
         'Publisher': ['Electronic Arts'],  # valor típico o uno frecuente
         'User_Score': [nota_usuario],
         'User Ratings Count': [n_votaciones],
-        'Estado_Consola': ['Actual'],
+        'Estado Consola': [estado_consola],
         'Price_Platform': [299.99],
         'Year_Consola': [year_consola],
         'Años_desde_lanzamiento_consola': [2024 - 2017],
