@@ -24,7 +24,7 @@ else:
     platform = st.selectbox('Plataforma', plataforma_obsoleta)
 genre = st.selectbox('Género', ['Sports', 'Platform', 'Racing', 'Role-Playing', 'Puzzle', 'Misc', 'Shooter', 'Simulation', 'Action', 'Fighting', 'Adventure', 'Strategy'])      # Ajusta también
 price = st.number_input('Precio del videojuego (€)', min_value=29.99, max_value=69.99, value=29.99)
-price_platform = st.number_input('Precio de la consola (€)', min_value=113.5, max_value=599, value=113.5)
+price_platform = st.number_input('Precio de la consola (€)', min_value=113.5, max_value=599.0, value=113.5)
 modo_juego = st.selectbox('Modo de juego', ['Multijugador', 'Individual'])
 pegi = st.selectbox('Clasificación PEGI', ['Infantil', 'Adulto', 'Adolescente'])
 duracion_cat = st.selectbox('Duración estimada', ['Corto', 'Medio', 'Largo'])
