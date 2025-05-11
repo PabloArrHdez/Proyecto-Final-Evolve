@@ -15,7 +15,7 @@ plataformas_activas = [
 ]
 plataforma_secundaria = ['Nintendo 3DS', 'PlayStation Vita']
 plataforma_obsoleta = ['Nintendo Wii', 'Nintendo Entertainment System', 'Game Boy', 'Nintendo DS', 'Xbox 360', 'PlayStation 3', 'PlayStation 2', 'Super Nintendo Entertainment System', 'Game Boy Advance', 'Nintendo 64', 'PlayStation', 'Xbox', 'Atari 2600', 'PlayStation Portable', 'GameCube', 'Nintendo Wii U', 'Sega Genesis', 'Dream Cast', 'Sega Saturn']
-estado_consola = st.selectbox('Antigüedad Consola', ['Obsoleta', ' Consola Secundaria', ' Consola Activa'])
+estado_consola = st.selectbox('Antigüedad Consola', ['Obsoleta', 'Consola Secundaria', 'Consola Activa'])
 if estado_consola == 'Consola Activa':
     platform = st.selectbox('Plataforma', plataformas_activas)
 elif estado_consola == 'Consola Secundaria':
@@ -64,8 +64,8 @@ if st.button('Predecir Ventas'):
         'Años_desde_lanzamiento_consola': [year - year_consola]
     })
 
-    prediccion = modelo.predict(input_data)[0]
-    st.success(f'Predicción estimada: **{prediccion}**')
+prediccion = modelo.predict(input_data)[0]
+st.success(f'Predicción estimada: **{prediccion}**')
 
 if prediccion == 'Muy Alta':
     st.info('🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.')
