@@ -30,5 +30,34 @@ duracion_cat = st.selectbox('Duración estimada', ['Corto', 'Medio', 'Largo'])
 year = st.number_input('Año del videojuego', min_value=1980, max_value=2020, value=1980)
 nota_usuario = st.number_input('Nota del usuario', min_value=0, max_value=10, value=0)
 n_votaciones = st.number_input('Nº votaciones', min_value=0, max_value=500, value=5)
+year_consola = st.number_input('Año de la consola', min_value=1977, max_value=2013, value=1977)
+saga = st.selectbox('Saga', ['No saga', 'Saga'])
+economia = st.selectbox('Situación economica', ['Crecimiento', 'Recesion'])
+
+
+
+# Botón para predecir
+if st.button('Predecir Ventas'):
+    # Crear dataframe con los valores ingresados
+    input_data = pd.DataFrame({
+        'Platform': [platform],
+        'Genre': [genre],
+        'Price': [price],
+        'Modo Juego': [modo_juego],
+        'PEGI_Categoria': [pegi],
+        'Duracion_ juego_cat': [duracion_cat],
+        'Year': [2024],
+        'Publisher': ['Electronic Arts'],  # valor típico o uno frecuente
+        'User_Score': [7.5],
+        'User Ratings Count': [300],
+        'Estado_Consola': ['Actual'],
+        'Price_Platform': [299.99],
+        'Year_Consola': [2017],
+        'Años_desde_lanzamiento_consola': [2024 - 2017],
+        'Precio_relativo': [price / 299.99],
+        'Nombre_Base': ['BaseName'],
+        'Tipo_Saga': ['No Saga'],
+        'Situacion_Economica': ['Crecimiento']
+    })
 
 
