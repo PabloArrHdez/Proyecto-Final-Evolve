@@ -10,6 +10,11 @@ st.title('Predicción de Ventas de Videojuegos')
 st.markdown('Introduce los detalles del videojuego para estimar su categoría de ventas.')
 
 # Inputs visibles para el usuario
+plataformas_activas = [
+    'PlayStation 4', 'Xbox One', 'PC'
+]
+plataforma_secundaria = ['Nintendo 3DS', 'PlayStation Vita']
+
 estado_consola = st.selectbox('Antigüedad Consola', ['Obsoleta', ' Consola Secundaria', ' Consola Activa'])
 platform = st.selectbox('Plataforma', ['Nintendo Wii', 'Nintendo Entertainment System', 'Game Boy', 'Nintendo DS', 'Xbox 360', 'PlayStation 3', 'PlayStation 2', 'Super Nintendo Entertainment System', 'Game Boy Advance', 'Nintendo 3DS', 'PlayStation 4', 'Nintendo 64', 'PlayStation', 'Xbox', 'PC', 'Atari 2600', 'PlayStation Portable', 'Xbox One', 'GameCube', 'Nintendo Wii U', 'Sega Genesis', 'Dream Cast', 'PlayStation Vita', 'Sega Saturn'])  # Ajusta tus valores reales
 genre = st.selectbox('Género', ['Sports', 'Platform', 'Racing', 'Role-Playing', 'Puzzle', 'Misc', 'Shooter', 'Simulation', 'Action', 'Fighting', 'Adventure', 'Strategy'])      # Ajusta también
