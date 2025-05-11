@@ -60,7 +60,7 @@ if st.button('Predecir Ventas'):
         'Tipo_Saga': [saga],
         'Situacion_Economica': [economia],
         'Nombre_Base': ['JuegoGenérico'],
-        'Precio_relativo': [price / price_platform]
+        'Precio_relativo': [price / price_platform],
         'Año desde lanzamiento consola': [year - year_consola]
     })
 
