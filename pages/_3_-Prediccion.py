@@ -24,6 +24,7 @@ else:
     platform = st.selectbox('Plataforma', plataforma_obsoleta)
 genre = st.selectbox('Género', ['Sports', 'Platform', 'Racing', 'Role-Playing', 'Puzzle', 'Misc', 'Shooter', 'Simulation', 'Action', 'Fighting', 'Adventure', 'Strategy'])      # Ajusta también
 price = st.number_input('Precio del videojuego (€)', min_value=29.99, max_value=69.99, value=29.99)
+price_platform = st.number_input('Precio de la consola (€)', min_value=113.5, max_value=599, value=113.5)
 modo_juego = st.selectbox('Modo de juego', ['Multijugador', 'Individual'])
 pegi = st.selectbox('Clasificación PEGI', ['Infantil', 'Adulto', 'Adolescente'])
 duracion_cat = st.selectbox('Duración estimada', ['Corto', 'Medio', 'Largo'])
@@ -33,6 +34,9 @@ n_votaciones = st.number_input('Nº votaciones', min_value=0, max_value=500, val
 year_consola = st.number_input('Año de la consola', min_value=1977, max_value=2013, value=1977)
 saga = st.selectbox('Saga', ['No saga', 'Saga'])
 economia = st.selectbox('Situación economica', ['Crecimiento', 'Recesion'])
+publisher = st.selectbox('Compañia', ['Nintendo', 'Microsoft Game Studios', 'Take-Two Interactive',
+ 'Sony Computer Entertainment', 'Activision', 'Ubisoft', 'Bethesda Softworks',
+ 'Electronic Arts', 'Sega'])
 
 
 
@@ -47,17 +51,17 @@ if st.button('Predecir Ventas'):
         'PEGI_Categoria': [pegi],
         'Duracion_ juego_cat': [duracion_cat],
         'Year': [year],
-        'Publisher': ['Electronic Arts'],  # valor típico o uno frecuente
+        'Publisher': [publisher],  # valor típico o uno frecuente
         'User_Score': [nota_usuario],
         'User Ratings Count': [n_votaciones],
         'Estado Consola': [estado_consola],
-        'Price_Platform': [299.99],
+        'Price_Platform': [price_platform],
         'Year_Consola': [year_consola],
-        'Años_desde_lanzamiento_consola': [2024 - 2017],
-        'Precio_relativo': [price / 299.99],
-        'Nombre_Base': ['BaseName'],
         'Tipo_Saga': [saga],
         'Situacion_Economica': [economia]
+        'Nombre_Base': ['JuegoGenérico'],
+        'Precio_relativo': [price / price_platform]
+        'Año desde lanzamiento consola': [year - year_consola]
     })
 
 
