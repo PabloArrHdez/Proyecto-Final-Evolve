@@ -64,4 +64,7 @@ if st.button('Predecir Ventas'):
         'Año desde lanzamiento consola': [year - year_consola]
     })
 
+    prediccion = modelo.predict(input_data)[0]
+    st.success(f'Predicción estimada: **{prediccion}**')
+
 
