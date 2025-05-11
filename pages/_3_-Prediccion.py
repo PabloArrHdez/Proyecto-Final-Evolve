@@ -43,7 +43,7 @@ publisher = st.selectbox('Compañia', ['Nintendo', 'Microsoft Game Studios', 'Ta
 # Botón para predecir
 if st.button('Predecir Ventas'):
     # Crear dataframe con los valores ingresados
-    input_data = pd.DataFrame({
+    input_data = pd.DataFrame ({
         'Platform': [platform],
         'Genre': [genre],
         'Price': [price],
@@ -58,7 +58,7 @@ if st.button('Predecir Ventas'):
         'Price_Platform': [price_platform],
         'Year_Consola': [year_consola],
         'Tipo_Saga': [saga],
-        'Situacion_Economica': [economia]
+        'Situacion_Economica': [economia],
         'Nombre_Base': ['JuegoGenérico'],
         'Precio_relativo': [price / price_platform]
         'Año desde lanzamiento consola': [year - year_consola]
