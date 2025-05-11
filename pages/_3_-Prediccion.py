@@ -67,4 +67,9 @@ if st.button('Predecir Ventas'):
     prediccion = modelo.predict(input_data)[0]
     st.success(f'Predicción estimada: **{prediccion}**')
 
-
+if prediccion == 'Muy Alta':
+    st.info('🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.')
+elif prediccion == 'Alta':
+    st.info('🔹 Estimación: entre 250 mil y 1.21 millones de unidades vendidas')
+elif prediccion == 'Normal':
+    st.info('🔹 Estimación: entre mil y 240 mil de unidades vendidas.')
