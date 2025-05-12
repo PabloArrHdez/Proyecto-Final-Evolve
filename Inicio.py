@@ -5,7 +5,33 @@ import joblib
 st.set_page_config(page_title="Estimador")
 
 # CSS para fondo
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("https://images.pexels.com/photos/9100862/pexels-photo-9100862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
 
+    .credit {{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 12px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 4px 8px;
+        border-radius: 5px;
+    }}
+    </style>
+
+    <div class="credit">
+        Foto de <a href="https://www.pexels.com/es-es/@stasknop/" target="_blank">Ninja Son</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 
 st.title('🎮 Modelo predictivo categórico de ventas de Videojuegos. 👾')
