@@ -40,27 +40,26 @@ publisher = st.selectbox('Compañia', lista_publisher)
 
 # Botón para predecir
 if st.button('Predecir Ventas'):
-    # Crear dataframe con los valores ingresados
-    input_data = pd.DataFrame ({
-        'Platform': [platform],
-        'Genre': [genre],
-        'Price': [price],
-        'Modo Juego': [modo_juego],
-        'PEGI_categoria': [pegi],
-        'Duracion_juego_cat': [duracion_cat],
-        'Year': [year],
-        'Publisher': [publisher],  # valor típico o uno frecuente
-        'User Score': [nota_usuario],
-        'User Ratings Count': [n_votaciones],
-        'Estado_Consola': [estado_consola],
-        'Price_Platform': [price_platform],
-        'Year_Consola': [year_consola],
-        'Tipo_Saga': [saga],
-        'Situacion_Economica': [economia],
-        'Nombre_Base': ['JuegoGenérico'],
-        'Precio_relativo': [price / price_platform],
-        'Años_desde_lanzamiento_consola': [year - year_consola]})
-
+        # Crear dataframe con los valores ingresados
+        input_data = pd.DataFrame ({
+            'Platform': [platform],
+            'Genre': [genre],
+            'Price': [price],
+            'Modo Juego': [modo_juego],
+            'PEGI_categoria': [pegi],
+            'Duracion_juego_cat': [duracion_cat],
+            'Year': [year],
+            'Publisher': [publisher],  # valor típico o uno frecuente
+            'User Score': [nota_usuario],
+            'User Ratings Count': [n_votaciones],
+            'Estado_Consola': [estado_consola],
+            'Price_Platform': [price_platform],
+            'Year_Consola': [year_consola],
+            'Tipo_Saga': [saga],
+            'Situacion_Economica': [economia],
+            'Nombre_Base': ['JuegoGenérico'],
+            'Precio_relativo': [price / price_platform],
+            'Años_desde_lanzamiento_consola': [year - year_consola]})
 prediccion = modelo.predict(input_data)[0]
 st.success(f'Predicción estimada: **{prediccion}**')
 
