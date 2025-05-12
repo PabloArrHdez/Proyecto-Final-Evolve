@@ -5,9 +5,16 @@ import joblib
 st.set_page_config(page_title="Estimador")
 st.title('🎮 Modelo predictivo categórico de ventas de Videojuegos. 👾')
 
-tab1, tab2 = st.tabs(["Resumen", "Contacto"])
+tab1, tab2 = st.tabs(["Contacto", "Resumen"])
 
 with tab1:
+    st.subheader("Contacto")
+    st.write("Autor: Pablo Arrastia Hernández")
+    st.write("Email: pabloarrhdez@gmail.com")
+    st.write("Cuenta GitHub: https://github.com/PabloArrHdez")
+
+
+with tab2:
     st.subheader("Resumen del proyecto")
     st.markdown(
     """
@@ -20,9 +27,3 @@ with tab1:
     - **Muy Alta**: ventas comprendidas entre 1.220.000 y más de 80 millones.
     """
 )
-    
-with tab2:
-    st.subheader("Contacto")
-    st.write("Autor: Pablo Arrastia Hernández")
-    st.write("Email: pabloarrhdez@gmail.com")
-    st.write("Cuenta GitHub: https://github.com/PabloArrHdez")
