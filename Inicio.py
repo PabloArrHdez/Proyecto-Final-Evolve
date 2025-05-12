@@ -9,12 +9,17 @@ tab1, tab2 = st.tabs(["Resumen", "Contacto"])
 
 with tab1:
     st.subheader("Resumen del proyecto")
-    st.write("A continuación mostramos un modelo predictivo 'Random Forest' donde, gracias a las características propias que influyen en la venta de un videojuego, puede predecir, con un 70% de acierto, en qué intervalo categórico de cantidad de unidades vendidas se en cuenta el videojuego que se prediga. " \
-             "El resultado que muestra el modelo se divide en tres categorías de estimación de ventas." \
-             "- **Normal**: ventas comprendidas entre 1.000 y 240.000 unidades." \
-             "- **Alta**: ventas comprendidas entre 250.000 y 1.210.000 unidades." \
-             "- **Muy Alta**: ventas comprendidas entre 1.220.000 y más de 80 millones."
-            )
+    st.markdown(
+    """
+    A continuación mostramos un modelo predictivo **Random Forest** donde, gracias a las características propias que influyen en la venta de un videojuego, puede predecir, con un 70% de acierto, en qué intervalo categórico de cantidad de unidades vendidas se encuentra el videojuego que se prediga.
+
+    El resultado que muestra el modelo se divide en tres categorías de estimación de ventas:
+
+    - **Normal**: ventas comprendidas entre 1.000 y 240.000 unidades.  
+    - **Alta**: ventas comprendidas entre 250.000 y 1.210.000 unidades.  
+    - **Muy Alta**: ventas comprendidas entre 1.220.000 y más de 80 millones.
+    """
+)
     
 with tab2:
     st.subheader("Contacto")
