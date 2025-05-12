@@ -15,3 +15,4 @@ with tab2:
     st.subheader("Contacto")
     st.write("Autor: Pablo Arrastia Hernández")
     st.write("Email: pabloarrhdez@gmail.com")
+    st.write("Cuenta GitHub: https://github.com/PabloArrHdez")
