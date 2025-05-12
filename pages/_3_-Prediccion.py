@@ -61,8 +61,7 @@ if st.button('Predecir Ventas'):
         'Situacion_Economica': [economia],
         'Nombre_Base': ['JuegoGenérico'],
         'Precio_relativo': [price / price_platform],
-        'Años_desde_lanzamiento_consola': [year - year_consola]
-    })
+        'Años_desde_lanzamiento_consola': [year - year_consola]})
 
 prediccion = modelo.predict(input_data)[0]
 st.success(f'Predicción estimada: **{prediccion}**')
