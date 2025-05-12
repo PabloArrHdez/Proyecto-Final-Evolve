@@ -3,6 +3,37 @@ import pandas as pd
 import joblib
 
 st.set_page_config(page_title="Estimador")
+
+# CSS para fondo
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("https://unsplash.com/es/fotos/una-persona-escribiendo-en-un-teclado-frente-a-un-letrero-de-zona-de-juego-Dartp-yAjwQ");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+
+    .credit {{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 12px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 4px 8px;
+        border-radius: 5px;
+    }}
+    </style>
+
+    <div class="credit">
+        Foto de <a href="https://unsplash.com/es/@supergios" target="_blank">Ninja Son</a> en <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.title('🎮 Modelo predictivo categórico de ventas de Videojuegos. 👾')
 
 tab1, tab2 = st.tabs(["Contacto", "Resumen"])
