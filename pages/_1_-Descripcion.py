@@ -47,7 +47,7 @@ st.markdown(
     </style>
 
     <div class="credit">
-        Foto de <a href="https://www.pexels.com/es-es/@vazhnik/" target="_blank">Ninja Son</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+        Foto de <a href="https://www.pexels.com/es-es/@vazhnik/" target="_blank">VAZHNIK</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
     </div>
     """,
     unsafe_allow_html=True
