@@ -14,15 +14,38 @@ st.markdown(
         background-repeat: no-repeat;
         background-attachment: fixed;
     }}
-
+    h1, h2, h3, h4, h5, h6, p, div, span {{
+        color: white !important;
+    }}
+        section[data-testid="stSidebar"] > div {{
+        background-color: rgba(0, 0, 0, 0.5);
+    }}
+    /* Estilo para los tabs */
+    div[data-testid="stTabs"] > div {{
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }}
+        /* Créditos de la imagen */
     .credit {{
         position: fixed;
         bottom: 10px;
         right: 10px;
-        font-size: 12px;
-        background-color: rgba(255, 255, 255, 0.7);
-        padding: 4px 8px;
-        border-radius: 5px;
+        font-size: 13px;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 6px 10px;
+        border-radius: 8px;
+        color: white;
+        border: 1px solid white;
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+        z-index: 100;
+    }}
+        .credit a {{
+        color: white;
+        text-decoration: underline;
     }}
     </style>
 
