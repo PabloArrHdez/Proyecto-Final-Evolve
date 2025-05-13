@@ -4,13 +4,13 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://images.pexels.com/photos/15763947/pexels-photo-15763947/free-photo-of-tecnologia-divertido-videojuegos-juego-de-azar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-image: url("https://images.pexels.com/photos/1365795/pexels-photo-1365795.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }}
     h1, h2, h3, h4, h5, h6, p, div, span {{
-        color: black !important;
+        color: white !important;
     }}
         section[data-testid="stSidebar"] > div {{
         background-color: rgba(0, 0, 0, 0.5);
@@ -36,7 +36,7 @@ st.markdown(
     </style>
 
     <div class="credit">
-        Foto de <a href="https://www.pexels.com/es-es/@hellojoshwithers/" target="_blank">Josh Withers</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+        Foto de <a href="https://www.pexels.com/es-es/@mayday/" target="_blank">may day.ua</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
     </div>
     """,
     unsafe_allow_html=True
