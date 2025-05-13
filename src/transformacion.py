@@ -41,7 +41,7 @@ def union (df_video_games_limpio, df_all_games_limpio):
     return df_video_games_unido
 
 def transformacion (df_video_games_unido):
-    df_video_games_unido.drop(columns=['Rank','Title'], inplace=True)
+    df_video_games_unido.drop(columns=['Rank','Title', 'Platforms Info'], inplace=True)
     return df_video_games_unido
 
 def rellenar_valores_nulos(df_video_games_unido):
