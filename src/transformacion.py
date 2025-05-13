@@ -106,9 +106,9 @@ def clasificar_consola(plataforma):
     'Nintendo 3DS',
     'PlayStation Vita']
     if plataforma in mercado_activo:
-        return ' Consola Activa'
+        return 'Consola Activa'
     elif plataforma in mercado_secundario:
-        return ' Consola Secundaria'
+        return 'Consola Secundaria'
     else:
         return 'Obsoleta'
     
