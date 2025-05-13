@@ -22,7 +22,7 @@ st.markdown(
     }}
     /* Estilo para los tabs */
     div[data-testid="stTabs"] > div {{
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 1.0);
         border-radius: 12px;
         padding: 20px;
         margin-top: 20px;
