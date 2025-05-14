@@ -65,7 +65,7 @@ Las variables ocultas (`Precio_relativo`, `Nombre_Base`, `Años_desde_lanzamient
 
 ```text
 Random Forest Classification Report:
-  Accuracy: 70%
+  - **Accuracy: 70%**
   - Muy Alta: Precision 0.70, Recall 0.38
   - Alta: Precision 0.57, Recall 0.48
   - Normal: Precision 0.75, Recall 0.88
