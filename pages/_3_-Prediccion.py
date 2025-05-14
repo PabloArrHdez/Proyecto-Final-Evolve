@@ -78,8 +78,6 @@ saga = st.selectbox('Saga', ['No saga', 'Saga'])
 economia = st.selectbox('Situación economica', ['Crecimiento', 'Recesion'])
 publisher = st.selectbox('Compañia', lista_publisher)
 
-
-
 # Botón para predecir
 if st.button('Predecir Ventas'):
         # Crear dataframe con los valores ingresados
@@ -91,7 +89,7 @@ if st.button('Predecir Ventas'):
             'PEGI_categoria': [pegi],
             'Duracion_juego_cat': [duracion_cat],
             'Year': [year],
-            'Publisher': [publisher],  # valor típico o uno frecuente
+            'Publisher': [publisher],  
             'User Score': [nota_usuario],
             'User Ratings Count': [n_votaciones],
             'Estado_Consola': [estado_consola],
