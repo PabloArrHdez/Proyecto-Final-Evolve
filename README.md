@@ -8,10 +8,10 @@ Este proyecto es un producto mínimo viable (MVP) desarrollado como parte de un 
 
 Permite al usuario:
 - Introducir información sobre un videojuego (género, consola, precio, etc.)
-- Obtener una predicción automática de ventas clasificadas en:
-  - `Muy Alta`: +2 millones de copias vendidas.
-  - `Alta`: entre 1 y 2 millones de copias vendida.
-  - `Normal`: menos de 1 millón de copias vendidas
+- Obtener una predicción automática de ventas clasificadas (`Ventas_Clase`) en:
+  - `Muy Alta`: ventas totales comprendidas entre 1.220.000 y más de 80 millones de copias.
+  - `Alta`: ventas totales comprendidas entre 250.000 y 1.210.000 copias.
+  - `Normal`: ventas totales comprendidas entre 1.000 y 240.000 copias.
 
 ---
 
@@ -24,22 +24,26 @@ El modelo alcanza una precisión del **70%** con tres clases desbalanceadas.
 
 ##  Variables independientes utilizadas
 
-- Plataforma (`Platform`)
-- Año de lanzamiento (`Year`)
-- Género (`Genre`)
-- Precio del juego (`Price`)
-- Estado de la consola (`Estado_Consola`)
-- Clasificación PEGI (`PEGI_categoria`)
-- Modo de juego (`Modo Juego`)
-- Duración estimada (`Duracion_juego_cat`)
-- Nota de usuarios (`User Score`)
-- N.º de valoraciones (`User Ratings Count`)
-- Precio consola (`Price_Platform`)
-- Año consola (`Year_Consola`)
-- Años desde el lanzamiento de la consola
-- Situación económica global del año
+- Consola (`Platform`).
+- Año de lanzamiento del videojuego (`Year`).
+- Género (`Genre`).
+- Desarrollador (`Publisher`).
+- Precio del juego (`Price`).
+- Estado de la consola (`Estado_Consola`).
+- Clasificación PEGI (`PEGI_categoria`).
+- Modo de juego (`Modo Juego`).
+- Duración estimada (`Duracion_juego_cat`).
+- Valoracion del usuarios, del 0 al 10 (`User Score`).
+- N.º de valoraciones (`User Ratings Count`).
+- Precio consola (`Price_Platform`).
+- Año de lanzamiento de la consola (`Year_Consola`).
+- Situación económica global del año que salio el videojuego (`Situación_Economica`).
+- Perteneciente a una Saga de videojuegos o no (`Tipo_Saga`).
+- Titulo del Videojuego (`Nombre_Base`).
+- Período de tiempo, en años, desde el año que salio al mercado la consola y, el año que salio al mercado el videojuego para esa consola (`Años_desde_lanzamiento_consola`).
+- Relación entre el precio del videojuego y el precio de la consola en la que se lanza (`Precio_relativo`).
 
-Las variables ocultas (`Publisher`, `Precio_relativo`, `Nombre_Base`) son gestionadas automáticamente por el sistema.
+Las variables ocultas (`Precio_relativo`, `Nombre_Base`, `Años_desde_lanzamiento_consola`) son gestionadas automáticamente por el sistema.
 
 ---
 
