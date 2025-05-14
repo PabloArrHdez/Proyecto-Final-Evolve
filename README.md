@@ -2,7 +2,9 @@
 
 ## Overview 
 
-Este proyecto se centra en la materialización de 'MVP' (Mínimo Producto Viable), basado en la creación, desarrollo y uso de un modelo predictivo sobre cuántas ventas va a tener un videojuego si sale al mercado, teniendo en cuenta una serie de características, previamente definidas y una base de datos sobre ventas de videojuegos pasados. La interfaz utilizada para que el cliente final interactúe con el modelo es la facilitada por **Streamlit**.
+Este proyecto se centra en la materialización de 'MVP' (Mínimo Producto Viable), basado en la creación, desarrollo y uso de un modelo predictivo sobre cuántas ventas va a tener un videojuego si sale al mercado, teniendo en cuenta una serie de características, previamente definidas y una base de datos sobre ventas de videojuegos pasados. 
+
+La interfaz utilizada para que el cliente final interactúe con el modelo es la facilitada por **Streamlit**.
 
 ---
 
