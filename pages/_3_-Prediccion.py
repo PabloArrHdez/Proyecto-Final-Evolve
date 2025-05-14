@@ -100,60 +100,60 @@ if st.button('Predecir Ventas'):
             'Nombre_Base': ['JuegoGenérico'],
             'Precio_relativo': [price / price_platform],
             'Años_desde_lanzamiento_consola': [year - year_consola]})
-prediccion = modelo.predict(input_data)[0]
+        prediccion = modelo.predict(input_data)[0]
 
-st.markdown(
-    f"""
-    <div style="
-        background-color: #e0f7fa;
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid #b2ebf2;
-        color: black;
-        font-weight: bold;
-        margin-top: 20px;
-    ">
-        Predicción estimada: {prediccion}
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-if prediccion == 'Muy Alta':
-    st.markdown("""
-        <div style="
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #c8e6c9;
-            color: #1b5e20;
-            margin-top: 10px;
-        ">
-            🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.
-        </div>
-        """, unsafe_allow_html=True)
-elif prediccion == 'Alta':
-    st.markdown("""
-        <div style="
-            background-color: #fffde7;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #fff59d;
-            color: #f57f17;
-            margin-top: 10px;
-        ">
-            🔹 Estimación: entre 250 mil y 1.21 millones de unidades vendidas.
-        </div>
-        """, unsafe_allow_html=True)
-elif prediccion == 'Normal':
-    st.markdown("""
-        <div style="
-            background-color: #fbe9e7;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #ffab91;
-            color: #bf360c;
-            margin-top: 10px;
-        ">
-            🔹 Estimación: entre mil y 240 mil de unidades vendidas.
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            f"""
+            <div style="
+                background-color: #e0f7fa;
+                padding: 20px;
+                border-radius: 10px;
+                border: 1px solid #b2ebf2;
+                color: black;
+                font-weight: bold;
+                margin-top: 20px;
+            ">
+                Predicción estimada: {prediccion}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        if prediccion == 'Muy Alta':
+            st.markdown("""
+                <div style="
+                    background-color: #e8f5e9;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border: 1px solid #c8e6c9;
+                    color: #1b5e20;
+                    margin-top: 10px;
+                ">
+                    🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.
+                </div>
+                """, unsafe_allow_html=True)
+        elif prediccion == 'Alta':
+            st.markdown("""
+                <div style="
+                    background-color: #fffde7;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border: 1px solid #fff59d;
+                    color: #f57f17;
+                    margin-top: 10px;
+                ">
+                    🔹 Estimación: entre 250 mil y 1.21 millones de unidades vendidas.
+                </div>
+                """, unsafe_allow_html=True)
+        elif prediccion == 'Normal':
+            st.markdown("""
+                <div style="
+                    background-color: #fbe9e7;
+                    padding: 15px;
+                    border-radius: 8px;
+                    border: 1px solid #ffab91;
+                    color: #bf360c;
+                    margin-top: 10px;
+                ">
+                    🔹 Estimación: entre mil y 240 mil de unidades vendidas.
+                </div>
+                """, unsafe_allow_html=True)
