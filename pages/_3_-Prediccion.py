@@ -38,7 +38,7 @@ st.markdown(
     </style>
 
     <div class="credit">
-        Foto de <a href="" target="_blank">NOMBRE</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+        Foto de <a href="https://unsplash.com/es/@ingvar_erik" target="_blank">Igor Karimov</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
     </div>
     """,
     unsafe_allow_html=True
