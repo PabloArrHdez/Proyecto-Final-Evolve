@@ -8,7 +8,8 @@ Este proyecto es un producto mínimo viable (MVP) desarrollado como parte de un 
 
 ## Data sources
 
-. Kaggle -
+- Kaggle [Kaggle](https://www.kaggle.com/datasets/zahidmughal2343/video-games-sale)
+- Kaggle [Kaggle](https://www.kaggle.com/datasets/beridzeg45/video-games)
 
 ---
 
