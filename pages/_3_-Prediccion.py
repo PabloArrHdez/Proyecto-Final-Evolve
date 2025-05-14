@@ -2,6 +2,48 @@ import streamlit as st
 import pandas as pd
 import joblib
 
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("https://images.unsplash.com/photo-1690467504306-075eea30a7c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDI5fHx2aWRlb2dhbWVzfGVufDB8MHwwfHx8Mg%3D%3D");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
+    h1, h2, h3, h4, h5, h6, p, div, span {{
+        color: black !important;
+    }}
+        section[data-testid="stSidebar"] > div {{
+        background-color: rgba(0, 0, 0, 0.5);
+    }}
+        /* Créditos de la imagen */
+    .credit {{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 13px;
+        background-color: rgba(245, 245, 245, 1.0);
+        padding: 6px 10px;
+        border-radius: 8px;
+        color: white;
+        border: 1px solid white;
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+        z-index: 100;
+    }}
+        .credit a {{
+        color: black;
+        text-decoration: underline;
+    }}
+    </style>
+
+    <div class="credit">
+        Foto de <a href="" target="_blank">NOMBRE</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Cargar modelo
 modelo = joblib.load('Modelo/modelo_videojuegos.pkl')
 
@@ -61,11 +103,59 @@ if st.button('Predecir Ventas'):
             'Precio_relativo': [price / price_platform],
             'Años_desde_lanzamiento_consola': [year - year_consola]})
 prediccion = modelo.predict(input_data)[0]
-st.success(f'Predicción estimada: **{prediccion}**')
 
+st.markdown(
+    f"""
+    <div style="
+        background-color: #e0f7fa;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #b2ebf2;
+        color: black;
+        font-weight: bold;
+        margin-top: 20px;
+    ">
+        Predicción estimada: {prediccion}
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 if prediccion == 'Muy Alta':
-    st.info('🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.')
+    st.markdown("""
+        <div style="
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #c8e6c9;
+            color: #1b5e20;
+            margin-top: 10px;
+        ">
+            🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.
+        </div>
+        """, unsafe_allow_html=True)
 elif prediccion == 'Alta':
-    st.info('🔹 Estimación: entre 250 mil y 1.21 millones de unidades vendidas')
+    st.markdown("""
+        <div style="
+            background-color: #fffde7;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #fff59d;
+            color: #f57f17;
+            margin-top: 10px;
+        ">
+            🔹 Estimación: entre 250 mil y 1.21 millones de unidades vendidas.
+        </div>
+        """, unsafe_allow_html=True)
 elif prediccion == 'Normal':
-    st.info('🔹 Estimación: entre mil y 240 mil de unidades vendidas.')
+    st.markdown("""
+        <div style="
+            background-color: #fbe9e7;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ffab91;
+            color: #bf360c;
+            margin-top: 10px;
+        ">
+            🔹 Estimación: entre mil y 240 mil de unidades vendidas.
+        </div>
+        """, unsafe_allow_html=True)
