@@ -1,5 +1,7 @@
 #  Predicción de Ventas de Videojuegos
 
+## Overview 
+
 Este proyecto es un producto mínimo viable (MVP) desarrollado como parte de un TFM de Data Science. Consiste en un modelo predictivo que estima la categoría de ventas de un videojuego en el momento de su lanzamiento, usando características clave del mismo. El modelo está integrado en una aplicación interactiva mediante **Streamlit**.
 
 ---
