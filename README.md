@@ -28,8 +28,11 @@ Permite al usuario:
 
 ##  Modelo utilizado
 
-Se ha entrenado un modelo de **Random Forest Classifier** con un pipeline de preprocesamiento (escalado de variables numéricas + codificación One-Hot).  
-El modelo alcanza una precisión del **70%** con tres clases desbalanceadas.
+Se ha entrenado un modelo de **Random Forest Classifier** con un pipeline de preprocesamiento.
+Primero, divide el conjunto de datos en entrenamiento y prueba, estratificando por la variable objetivo. Luego, separa las variables numéricas y categóricas para aplicar un preprocesamiento adecuado: escalado estándar para las numéricas (`StandardScaler`) y codificación one-hot para las categóricas (`OneHotEncoder`). 
+Finalmente, entrena un modelo de Random Forest con los datos preprocesados y realiza predicciones sobre el conjunto de prueba.
+
+El modelo alcanza una precisión del **70%** con las tres clases previamente descritas.
 
 ---
 
