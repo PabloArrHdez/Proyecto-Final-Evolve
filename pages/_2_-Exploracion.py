@@ -5,16 +5,16 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://images.pexels.com/photos/4522998/pexels-photo-4522998.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-image: url("https://images.unsplash.com/photo-1597840900616-664e930c29df?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }}
     h1, h2, h3, h4, h5, h6, p, div, span {{
-        color: black !important;
+        color: white !important;
     }}
         section[data-testid="stSidebar"] > div {{
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(0, 0, 0, 0.5);
     }}
         /* Créditos de la imagen */
     .credit {{
@@ -37,7 +37,7 @@ st.markdown(
     </style>
 
     <div class="credit">
-        Foto de <a href="https://www.pexels.com/es-es/@polina-tankilevitch/" target="_blank">Polina Tankilevitch</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+        Foto de <a href="https://unsplash.com/es/@benofthenorth" target="_blank">Ben Griffiths</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
     </div>
     """,
     unsafe_allow_html=True
