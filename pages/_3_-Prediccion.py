@@ -41,7 +41,7 @@ st.markdown(
     </style>
 
     <div class="credit">
-        Foto de <a href="https://unsplash.com/es/@markusspiske" target="_blank">Markus Spiske</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
+        Autor: <a href="https://unsplash.com/es/@markusspiske" target="_blank">Markus Spiske</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
     </div>
     """,
     unsafe_allow_html=True

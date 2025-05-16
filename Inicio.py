@@ -53,7 +53,7 @@ st.markdown(
     </style>
 
     <div class="credit">
-        Foto de <a href="https://www.pexels.com/es-es/@borja-lopez/" target="_blank">Borja Lopez</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
+        Autor: <a href="https://www.pexels.com/es-es/@borja-lopez/" target="_blank">Borja Lopez</a> en <a href="https://www.pexels.com/es-es/" target="_blank">Pexels</a>
     </div>
     """,
     unsafe_allow_html=True
