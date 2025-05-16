@@ -10,7 +10,7 @@ st.markdown(
         background-repeat: no-repeat;
         background-attachment: fixed;
     }}
-    h1, h2, h3, h4, h5, h6, p, div, span {{
+    h1, h2, h3, h4, h5, h6, p, span {{
         color: white !important;
     }}
         section[data-testid="stSidebar"] > div {{
@@ -37,6 +37,7 @@ st.markdown(
         color: white;
         text-decoration: underline;
     }}
+
     </style>
 
     <div class="credit">
