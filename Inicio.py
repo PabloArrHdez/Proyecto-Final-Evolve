@@ -19,6 +19,9 @@ st.markdown(
     }}
         section[data-testid="stSidebar"] > div {{
         background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }}
     /* Estilo para los tabs */
     div[data-testid="stTabs"] > div {{
