@@ -13,7 +13,7 @@ st.markdown(
         color: white !important;
     }}
         section[data-testid="stSidebar"] > div {{
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
     }}
         /* Créditos de la imagen */
     .credit {{
