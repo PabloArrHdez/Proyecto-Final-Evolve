@@ -22,7 +22,7 @@ st.markdown(
         bottom: 10px;
         right: 10px;
         font-size: 13px;
-        background-color: rgba(245, 245, 245, 1.0);
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 6px 10px;
         border-radius: 8px;
         color: white;
@@ -31,7 +31,7 @@ st.markdown(
         z-index: 100;
     }}
         .credit a {{
-        color: black;
+        color: white;
         text-decoration: underline;
     }}
     </style>
