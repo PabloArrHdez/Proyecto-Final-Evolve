@@ -43,7 +43,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.title ("Explorador de videojuegos (1980-2020). 🕵🏼‍♂️​")
+st.title ("Explorador de videojuegos (1980-2020) 🕵🏼‍♂️​.")
 
 df = pd.read_csv('Data/video_games_sales_completo.csv')
 
