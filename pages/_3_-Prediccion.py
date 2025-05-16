@@ -6,13 +6,13 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background-image: url("https://images.unsplash.com/photo-1690467504306-075eea30a7c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDI5fHx2aWRlb2dhbWVzfGVufDB8MHwwfHx8Mg%3D%3D");
+        background-image: url("https://images.unsplash.com/photo-1542903660-eedba2cda473?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }}
-    h1, h2, h3, h4, h5, h6, p, div, span {{
-        color: black !important;
+    h1, h2, h3, h4, h5, h6, span, p {{
+        color: white !important;
     }}
         section[data-testid="stSidebar"] > div {{
         background-color: rgba(0, 0, 0, 0.6);
@@ -26,7 +26,7 @@ st.markdown(
         bottom: 10px;
         right: 10px;
         font-size: 13px;
-        background-color: rgba(245, 245, 245, 1.0);
+        background-color: rgba(0, 0, 0, 0.6);
         padding: 6px 10px;
         border-radius: 8px;
         color: white;
@@ -35,13 +35,13 @@ st.markdown(
         z-index: 100;
     }}
         .credit a {{
-        color: black;
+        color: white;
         text-decoration: underline;
     }}
     </style>
 
     <div class="credit">
-        Foto de <a href="https://unsplash.com/es/@ingvar_erik" target="_blank">Igor Karimov</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
+        Foto de <a href="https://unsplash.com/es/@markusspiske" target="_blank">Markus Spiske</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
     </div>
     """,
     unsafe_allow_html=True
