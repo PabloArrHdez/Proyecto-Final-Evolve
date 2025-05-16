@@ -39,7 +39,6 @@ st.markdown(
         text-decoration: underline;
     }}
     </style>
-
     <div class="credit">
         Autor: <a href="https://unsplash.com/es/@markusspiske" target="_blank">Markus Spiske</a> en <a href="https://unsplash.com/es" target="_blank">Unsplash</a>
     </div>
@@ -82,6 +81,24 @@ economia = st.selectbox('Situación economica', ['Crecimiento', 'Recesion'])
 publisher = st.selectbox('Compañia', lista_publisher)
 
 # Botón para predecir
+st.markdown("""
+    <style>
+    div.stButton > button {
+        background-color: #fbc02d;   /* Fondo amarillo oscuro */
+        border: 2px solid #f44336;   /* Borde rojo */
+        border-radius: 8px;
+        padding: 0.6em 1.2em;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    div.stButton > button:hover {
+        background-color: #b2ebf2;   /* Efecto al pasar el ratón */
+        color: black;
+        border-color: #4dd0e1;
+        transform: scale(1.02);
+    }
+    </style>
+""", unsafe_allow_html=True)
 if st.button('Predecir Ventas'):
         # Crear dataframe con los valores ingresados
         input_data = pd.DataFrame ({
