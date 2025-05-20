@@ -148,7 +148,7 @@ if st.button('Predecir Ventas'):
                     color: #1b5e20;
                     margin-top: 10px;
                 ">
-                    🔹 Estimación: entre 1.22 y 82.74 millones de unidades vendidas.
+                    🔹 Estimación: Entre 1.22 y 82.74 millones de unidades vendidas.
                 </div>
                 """, unsafe_allow_html=True)
         elif prediccion == 'Alta':
@@ -161,7 +161,7 @@ if st.button('Predecir Ventas'):
                     color: #f57f17;
                     margin-top: 10px;
                 ">
-                    🔹 Estimación: entre 250 mil y 1.21 millones de unidades vendidas.
+                    🔹 Estimación: Entre 250 mil y 1.21 millones de unidades vendidas.
                 </div>
                 """, unsafe_allow_html=True)
         elif prediccion == 'Normal':
@@ -174,6 +174,6 @@ if st.button('Predecir Ventas'):
                     color: #bf360c;
                     margin-top: 10px;
                 ">
-                    🔹 Estimación: entre mil y 240 mil de unidades vendidas.
+                    🔹 Estimación: Entre mil y 240 mil de unidades vendidas.
                 </div>
                 """, unsafe_allow_html=True)
