@@ -110,7 +110,7 @@ def clasificar_consola(plataforma):
     elif plataforma in mercado_secundario:
         return 'Consola Secundaria'
     else:
-        return 'Obsoleta'
+        return 'Consola Obsoleta'
     
 def añadimos_columna(df_video_games_unido):
     df_video_games_unido['Estado_Consola'] = df_video_games_unido['Platform'].apply(clasificar_consola)
